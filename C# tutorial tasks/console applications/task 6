@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write a number below and it eneter to see it cubed.");
+            int numberToCube = int.Parse(Console.ReadLine());
+            Console.WriteLine(Cube(numberToCube));
+            Console.ReadLine();
+        }
+        private static int Cube(int x)
+        {
+            return x * x * x;
+        }
+    }
+}
