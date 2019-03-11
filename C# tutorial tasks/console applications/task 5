@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool displayInstructions = true;
+            while (displayInstructions == true)
+            {
+                displayInstructions = Instructions();
+            }
+        }
+        private static bool Instructions()
+        {
+            Console.WriteLine("Input a number below and press enter.");
+            Console.WriteLine("Enter a second number and press enter to see the sum of the two numbers.");
+            Console.WriteLine("If you wish to exit, type the word exit");
+            string firstInput = Console.ReadLine();
+            
+            if (firstInput == "exit")
+            {
+                return false;
+            }
+            else
+            {
+                string secondInput = Console.ReadLine();
+                int firstNumber = Convert.ToInt32(firstInput);
+                int secondNumber = Convert.ToInt32(secondInput);
+                int sumNumbers = firstNumber + secondNumber;
+
+                Console.WriteLine("Sum of two numbers is: " + sumNumbers);
+                Console.WriteLine();               
+
+                return true;
+            }
+
+        }        
+           
+              
+    }
+}
