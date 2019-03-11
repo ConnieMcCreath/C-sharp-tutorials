@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write a number below to find out if it is divisable by 5.");
+            Console.Write("Number: ");
+            string numberAnalysed = Console.ReadLine();
+            
+            int numberInput = Convert.ToInt32(numberAnalysed);
+            //Console.WriteLine(numberInput % 5);
+
+
+            if (numberInput % 5 == 0)
+            {
+                string message = "Number is divisable by 5.";
+                Console.WriteLine(message);
+            }
+
+            else
+            {
+                string message = "Number not divisable by 5.";
+                Console.WriteLine(message);
+            }
+            
+            Console.ReadLine();
+
+           
+        }
+    }
+}
