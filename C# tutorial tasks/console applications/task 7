@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Write a number below and hit enter to calculate the square.");
+            int inputNumber = int.Parse(Console.ReadLine());
+            Selection(inputNumber);
+            SquareMethod(inputNumber);
+            Console.ReadLine();
+        }
+        
+        static void Selection(int x)
+        {
+            Console.WriteLine("The number you choose was: {0}", x);
+        }
+
+        static void SquareMethod(int x)
+        {
+            int square = x * x;            
+            Console.WriteLine("The square of the number is: {0}", square);                
+        }
+
+    }
+}
