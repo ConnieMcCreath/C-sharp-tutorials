@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the number that you want to be squared below");
+            Console.Write("Number: ");
+            string numberDefined = Console.ReadLine();
+            int numberToBeSquared = Convert.ToInt32(numberDefined);
+
+            Console.WriteLine("Number being squared is " + numberToBeSquared);
+            
+            Console.WriteLine(numberToBeSquared*numberToBeSquared);
+            Console.ReadLine();
+
+            //int numberSquared = Math.Pow(numberToBeSquared,2);
+
+        }
+    }
+}
